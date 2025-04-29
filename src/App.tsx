@@ -27,6 +27,9 @@ import PromoPopup from "./components/PromoPopup";
 import Footer from "./components/Footer";
 import NearbyPlaces from "./components/NearbyPlaces";
 import Testimonials from "./components/Testimonials";
+import sliderImage from "./images/sliderImage.webp";
+import terraceImage from "./images/Terrace.jpeg";
+import pykarafallsImage from "./images/PykarafallsOoty.webp";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xjkggwyp");
@@ -104,9 +107,9 @@ function HomePage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const heroImages = [
-    "../src/images/sliderImage.webp",
-    "../src/images/Terrace.jpeg",
-    "../src/images/PykarafallsOoty.webp",
+    sliderImage,
+    terraceImage,
+    pykarafallsImage
   ];
 
   useEffect(() => {
