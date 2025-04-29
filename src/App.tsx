@@ -30,6 +30,7 @@ import Testimonials from "./components/Testimonials";
 import sliderImage from "./images/sliderImage.webp";
 import terraceImage from "./images/Terrace.jpeg";
 import pykarafallsImage from "./images/PykarafallsOoty.webp";
+import homeImage from "./images/Home.jpg";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xjkggwyp");
@@ -269,10 +270,13 @@ function HomePage() {
               </div>
               <div className="w-full h-[300px] md:h-[400px] overflow-hidden rounded-lg shadow-lg">
                 <img
-                  src="../src/images/Home.jpg"
+                  src={homeImage}
                   alt="Resort overview"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  width="800"
+                  height="600"
+                  decoding="async"
                 />
               </div>
             </div>
