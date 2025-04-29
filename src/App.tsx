@@ -106,7 +106,6 @@ function HomePage() {
   const heroImages = [
     "../src/images/sliderImage.webp",
     "../src/images/Terrace.jpeg",
-    "../src/images/blackThunderThemePark.webp",
     "../src/images/PykarafallsOoty.webp",
   ];
 
