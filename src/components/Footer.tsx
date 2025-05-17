@@ -97,7 +97,7 @@ const Footer = () => {
               Sukham × HaMy Resort RESORT
             </h3>
             <p className="text-gray-400 mb-6">
-              Experience luxury and tranquility in the heart of Nilgiri
+              Experience Serenity & Comfort in the heart of Nilgiri
               District.
             </p>
 
