@@ -18,8 +18,9 @@ import {
   Waves,
   Twitter,
   ArrowRight,
+  Youtube,
 } from "lucide-react";
-    
+
 import { useForm, ValidationError } from "@formspree/react";
 import Navbar from "./components/Navbar";
 import Preloader from "./components/Preloader";
@@ -33,13 +34,13 @@ import pykarafallsImage from "./images/PykarafallsOoty.webp";
 import homeImage from "./images/Home.jpg";
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("xjkggwyp");
+  const [state, handleSubmit] = useForm("xblowzza");
 
   if (state.succeeded) {
     return (
       <div className="text-center p-4 bg-green-50 rounded-lg">
         <p className="text-green-600 font-semibold">
-          Thanks for your message! We'll get back to you soon.
+          Thanks for joining!
         </p>
       </div>
     );
@@ -96,7 +97,7 @@ function ContactForm() {
         disabled={state.submitting}
         className="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50"
       >
-        {state.submitting ? "Sending..." : "Send Message"}
+        {state.submitting ? "Sending..." : "Submit"}
       </button>
     </form>
   );
@@ -106,12 +107,8 @@ function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
   const [showPromo, setShowPromo] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  const heroImages = [
-    sliderImage,
-    terraceImage,
-    pykarafallsImage
-  ];
+
+  const heroImages = [sliderImage, terraceImage, pykarafallsImage];
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -124,7 +121,7 @@ function HomePage() {
   // Auto carousel effect
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
+      setCurrentImageIndex((prevIndex) =>
         prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
       );
     }, 4000); // Change image every 4 seconds
@@ -169,7 +166,7 @@ function HomePage() {
               <div
                 key={index}
                 className={`absolute inset-0 w-full h-full transition-opacity duration-1000
-                  ${currentImageIndex === index ? 'opacity-100' : 'opacity-0'}`}
+                  ${currentImageIndex === index ? "opacity-100" : "opacity-0"}`}
               >
                 <div className="relative w-full h-full">
                   <img
@@ -192,9 +189,11 @@ function HomePage() {
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
                 className={`w-2 h-2 rounded-full transition-all duration-300
-                  ${currentImageIndex === index 
-                    ? 'bg-white w-4' 
-                    : 'bg-white/50 hover:bg-white/75'}`}
+                  ${
+                    currentImageIndex === index
+                      ? "bg-white w-4"
+                      : "bg-white/50 hover:bg-white/75"
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
@@ -204,19 +203,23 @@ function HomePage() {
           <div className="relative z-10 w-full px-4">
             <div className="max-w-[90%] w-full mx-auto text-center">
               {/* Main Heading */}
-              <h1 className="text-white font-serif 
+              <h1
+                className="text-white font-serif 
                              text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
                              leading-[1.2] mb-4 sm:mb-6
-                             drop-shadow-lg">
-                Sukham Resort
+                             drop-shadow-lg"
+              >
+                Sukham <strong> ×</strong> HaMy Resort
               </h1>
 
               {/* Subheading */}
-              <p className="text-white/90 
+              <p
+                className="text-white/90 
                             text-lg sm:text-xl md:text-2xl lg:text-3xl 
                             mb-8 sm:mb-10
-                            drop-shadow-lg">
-                Experience Luxury & Tranquility
+                            drop-shadow-lg"
+              >
+                Experience Serenity & Comfort
               </p>
 
               {/* CTA Buttons */}
@@ -255,17 +258,16 @@ function HomePage() {
         <section id="about" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-serif text-center mb-12">
-              Welcome to Sukham
+              Welcome to Sukham × HaMy Resort
             </h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-gray-600 leading-relaxed">
-                  We are SUKHAM. The SUKHAM resort has been inaugurated in the
-                  year 12th November, 2023. The Rooms availabile from 1st
-                  December, 2023 onwards The SUKHAM resort is approved by the
-                  Government of Tamil Nadu tourism, Tamil Nadu. The SUKHAM
-                  resort is located irrupukal valley, Kotagiri from the Kotagiri
-                  bus terminal 4.7km just 10 to 15 minutes travel.
+                  We are SUKHAM × HaMy Resort. It has been inaugurated in the
+                  year 12th November, 2023. It is approved by the Government of
+                  Tamil Nadu tourism, Tamil Nadu. The resort is located
+                  irrupukal valley, Kotagiri from the Kotagiri bus terminal
+                  4.7km just 10 to 15 minutes travel.
                 </p>
               </div>
               <div className="w-full h-[300px] md:h-[400px] overflow-hidden rounded-lg shadow-lg">
@@ -290,18 +292,18 @@ function HomePage() {
 
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-gray-600 leading-relaxed mb-8">
-                Welcome to our luxurious resort, a tranquil haven nestled amidst
-                breathtaking natural landscapes. Step into our elegantly
-                designed rooms that effortlessly blend modern comfort with
-                rustic charm. Each room boasts spacious interiors, adorned with
-                tasteful furnishings and enchanting views of the surrounding
-                lush greenery. Immerse yourself in a world of serenity as you
-                unwind on a plush king-sized bed, enveloped in crisp,
-                high-thread-count linens. Indulge in the opulent marble
-                bathroom, featuring a rejuvenating rain shower and deluxe
-                amenities. With seamless technology and thoughtful touches, our
-                rooms provide the perfect sanctuary for relaxation, ensuring an
-                unforgettable stay for every discerning guest.
+                Welcome to our refined sanctuary, a peaceful haven embraced by
+                nature's beauty. Step into our elegantly designed rooms that
+                effortlessly blend modern comfort with rustic charm. Each room
+                boasts spacious interiors, adorned with tasteful furnishings and
+                enchanting views of the surrounding lush greenery. Immerse
+                yourself in a world of serenity as you unwind on a plush
+                king-sized bed, enveloped in crisp, high-thread-count linens.
+                Indulge in the opulent marble bathroom, featuring a rejuvenating
+                rain shower and deluxe amenities. With seamless technology and
+                thoughtful touches, our rooms provide the perfect sanctuary for
+                relaxation, ensuring an unforgettable stay for every discerning
+                guest.
               </p>
               <div className="flex justify-center gap-4">
                 <Link
@@ -414,6 +416,14 @@ function HomePage() {
                   className="text-gray-600 hover:text-primary transition-colors"
                 >
                   <Twitter className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://www.youtube.com/@SUKHAMResort"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-primary transition-colors"
+                >
+                  <Youtube className="w-6 h-6" />
                 </a>
               </div>
 

@@ -94,7 +94,7 @@ const Footer = () => {
           {/* Brand and Social Media */}
           <div>
             <h3 className="text-white font-serif text-2xl mb-4">
-              SUKHAM RESORT
+              Sukham × HaMy Resort RESORT
             </h3>
             <p className="text-gray-400 mb-6">
               Experience luxury and tranquility in the heart of Nilgiri
@@ -145,7 +145,7 @@ const Footer = () => {
         {/* Copyright and Credits */}
         <div className="border-t border-gray-800 pt-8 text-center space-y-2">
           <p>
-            &copy; {new Date().getFullYear()} SUKHAM RESORT. All rights
+            &copy; {new Date().getFullYear()} Sukham × HaMy Resort. All rights
             reserved.
           </p>
           <p className="text-sm text-gray-400">

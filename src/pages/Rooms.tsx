@@ -90,7 +90,7 @@ const RoomsPage = () => {
           className="flex items-center gap-2 text-xl font-bold text-primary dark:text-primary/90"
         >
           <img src={Logo} alt="Sukham Resort Logo" className="h-8 w-auto" />
-          Sukham Resort
+          Sukham × HaMy Resort
         </Link>
       </nav>
 
@@ -220,7 +220,7 @@ const RoomsPage = () => {
       <footer className="bg-gray-900 dark:bg-black text-white py-8 mt-20">
         <div className="text-center">
           <p>
-            © {new Date().getFullYear()} Sukham Resort. All rights reserved.
+            © {new Date().getFullYear()} Sukham × HaMy Resort. All rights reserved.
           </p>
           <p className="text-sm text-gray-400">
             Created and Maintained by{" "}
