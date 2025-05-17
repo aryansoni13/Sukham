@@ -22,7 +22,7 @@ const PromoPopup = ({ isOpen, onClose }: PromoPopupProps) => {
         <div className="p-6">
           <div className="bg-primary/10 rounded-lg p-4 mb-4">
             <h2 className="text-2xl font-serif text-primary text-center mb-2">
-              SUKHAM RESORT, Kotagiri
+              Sukham × HaMy Resort, Kotagiri
             </h2>
             <div className="text-gray-700 space-y-2">
               <p className="font-semibold">Available Accommodations:</p>

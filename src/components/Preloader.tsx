@@ -8,7 +8,7 @@ const Preloader = ({ isLoading }: { isLoading: boolean }) => {
       <div className="relative">
         <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
         <div className="mt-4 text-xl font-serif text-primary">
-          Sukham Resort
+          Sukham × HaMy Resort  Resort
         </div>
       </div>
     </div>
